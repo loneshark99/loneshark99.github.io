@@ -9,4 +9,4 @@ Below is the design of Personalized Notification Feature that I am working on in
 
 ![alt text][DesignDiagram]
 
-[DesignDiagram]: https://loneshark99.github.io/images/PersonalizedNotificationServiceDesign.PNG "Programmatic Personalized Notification Design"
+[DesignDiagram]: https://loneshark99.github.io/images/PersonalizedNotificationServiceDesign1.PNG "Programmatic Personalized Notification Design"
