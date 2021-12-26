@@ -10,29 +10,38 @@ Tmux is a terminal multiplexer and I use it in my day to day activities. I have 
 
 Tmux has a client/server model, so you can detach and then later attach back to the same Tmux session. So you can continue working from where you left off. This is a great benefit.
 
-` tmux new-session -s MySession `
-` tmux detach-session MySession `
-` tmux attach-session -t MySession `
+```
+    tmux new-session -s MySession 
+    tmux detach-session MySession 
+    tmux attach-session -t MySession 
+```
 
 You can create mutiple windows
 
-` CTRL+A  C`  This creates a new window
-` CTRL+A  ,` Rename the window
-` CTRL+A 1` where 1 is the window number. This can be used to switch between windows
+| Operation | Command |
+| --- | ----------- |
+| Creates a new window | CTRL+A  C |
+| To split the window horizontally | CTRL+A  , |
+| To view the pane number | CTRL+A  1 |
+
 
 You can create mutiple panes
 
-` CTRL+A % ` To split the window vertically
-` CTRL+A " ` To split the window horizontally
-` CTRL+A q ` To view the pane number
-` CTRL+A arrow key ` To change between the panes
+| Operation | Command |
+| --- | ----------- |
+| To split the window vertically | CTRL+A % |
+| To split the window horizontally | CTRL+A " |
+| To view the pane number | CTRL+A q |
+| To change between the panes | CTRL+A arrow key |
 
-These are basically what I use. Tmux offers much more like different modes etc.
+
+These are basically the commands I use. Tmux offers much more like different modes etc.
 
 You can see tmux in action in this video.
 
-<video>
-    <source src="../Tmux_Recording.mkv" type="video/mp4">
+<video controls>
+  <source src="../Tmux_Recording.mp4" type="video/mp4">
+  Your browser does not support HTML video.
 </video>
 
 
