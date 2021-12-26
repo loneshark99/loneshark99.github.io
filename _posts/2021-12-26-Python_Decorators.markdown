@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Python Notebook Tips and Tricks"
-date:   2021-12-26 09:50:00 AM
+title:  "Python Decorators"
+date:   2021-12-26 13:11:00 PM
 categories: Python
 ---
 
