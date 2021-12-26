@@ -11,6 +11,7 @@ Take a look at this notebook to see the usefulness of SList.
 
 <p><a href="https://mybinder.org/v2/gh/loneshark99/PythonNotebooksCollection/HEAD?filepath=Jupyter_Notebook_Tips_and_Tricks.ipynb"><img alt="Binder" src="https://mybinder.org/badge_logo.svg" /></a></p>
 
-<a href="https://github.com/loneshark99/PythonNotebooksCollection/blob/main/Jupyter_Notebook_Tips_and_Tricks.ipynb" rel="nofollow" target="_blank">GitHub Notebook</a><div><br />
+<a href="https://github.com/loneshark99/PythonNotebooksCollection/blob/main/Jupyter_Notebook_Tips_and_Tricks.ipynb" rel="nofollow" target="_blank">GitHub Notebook</a>
+<br />
 
 -Thanks
