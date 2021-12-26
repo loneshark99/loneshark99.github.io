@@ -40,7 +40,7 @@ These are basically the commands I use. Tmux offers much more like different mod
 You can see tmux in action in this video.
 
 <video controls>
-  <source src="../tmux_Recording.mp4" type="video/mp4">
+  <source src="https://loneshark99.github.io/tmux_Recording.mp4" type="video/mp4">
   Your browser does not support HTML video.
 </video>
 
