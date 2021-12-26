@@ -13,7 +13,7 @@ To read more about python [formatting check](https://pyformat.info)
 
 
 <p><a href="https://mybinder.org/v2/gh/loneshark99/PythonNotebooksCollection/HEAD?filepath=Python_String_Formatting_And_Print_Redirection.ipynb"><img alt="Binder" src="https://mybinder.org/badge_logo.svg" /></a></p>
-<div><a href="https://github.com/loneshark99/PythonNotebooksCollection/blob/main/Python_String_Formatting_And_Print_Redirection.ipynb">GitHub Link</a></div><span class="annotator-hl"></span><p>Example :</p><p><br /></p>
+<div><a href="https://github.com/loneshark99/PythonNotebooksCollection/blob/main/Python_String_Formatting_And_Print_Redirection.ipynb">GitHub Link</a></div><span class="annotator-hl"></span>
 
 
 ```python
