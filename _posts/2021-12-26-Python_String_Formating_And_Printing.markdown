@@ -40,3 +40,23 @@ with open("Output.txt", "w") as f:
         else:
             print('{:>5s} | {:>5s} | {:>5s}'.format(lists[0][0], lists[0][1], lists[0][2]), file=f)
 ```
+
+One of the cool and powerful function in python is print. If you have a list and sometimes we want to print the list item on each line. Print makes this pretty easy by combining it with destructuring and adding a separator as a new line.
+
+```python
+from fnmatch import fnmatch
+addresses = [
+    "5412 W CLARK ST",
+    "1060 W ADDISON ST",
+    "4802 N BROADWAY"
+]
+
+streets = [address for address in addresses if fnmatch(address, "* ST")]
+print(*streets, sep="\n", end="\n")
+```
+
+Some other cool stuff in python are documented in this notebook. 
+
+
+<p><a href="https://mybinder.org/v2/gh/loneshark99/PythonNotebooksCollection/HEAD?filepath=Jupyter_Notebook_String_Tips_and_Tricks.ipynb"><img alt="Binder" src="https://mybinder.org/badge_logo.svg" /></a></p>
+<a href="https://github.com/loneshark99/PythonNotebooksCollection/blob/main/Jupyter_Notebook_String_Tips_and_Tricks.ipynb" target="_blank">GitHub Link</a>&nbsp;<div><br /></div><div>&nbsp;Thanks,</div><div>&nbsp;Yash</div>
