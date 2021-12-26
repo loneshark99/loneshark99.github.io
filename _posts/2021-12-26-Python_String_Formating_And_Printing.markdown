@@ -59,4 +59,7 @@ Some other cool stuff in python are documented in this notebook.
 
 
 <p><a href="https://mybinder.org/v2/gh/loneshark99/PythonNotebooksCollection/HEAD?filepath=Jupyter_Notebook_String_Tips_and_Tricks.ipynb"><img alt="Binder" src="https://mybinder.org/badge_logo.svg" /></a></p>
-<a href="https://github.com/loneshark99/PythonNotebooksCollection/blob/main/Jupyter_Notebook_String_Tips_and_Tricks.ipynb" target="_blank">GitHub Link</a>&nbsp;<div><br /></div><div>&nbsp;Thanks,</div><div>&nbsp;Yash</div>
+<a href="https://github.com/loneshark99/PythonNotebooksCollection/blob/main/Jupyter_Notebook_String_Tips_and_Tricks.ipynb" target="_blank">GitHub Link</a>
+
+
+Thanks
