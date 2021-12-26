@@ -2,7 +2,7 @@
 layout: post
 title:  "Tmux"
 date:   2021-12-25 22:51:00 PM
-categories: Tmux, Linux
+categories: Linux
 ---
 
 Tmux is a terminal multiplexer and I use it in my day to day activities. I have installed the [Oh-My-Tmux](https://github.com/gpakosz/.tmux). This gives some great benefits. Oh-My-Tmux maps the CTRL+A as the trigger key. Default is CTRL+B.
