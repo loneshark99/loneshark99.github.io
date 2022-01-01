@@ -37,5 +37,5 @@ Steps I take now :
 * Push the branch to github using [gh CLI](https://cli.github.com/manual/) Tool.
 
 ```
-
+    gh pr create
 ```
