@@ -15,7 +15,7 @@ Wish I knew this before or atleast tried to find a solution for this. I hope som
 
 ![alt text][Additional Drivers]
 
-[Additional Drivers]: https://loneshark99.github.io/Additional%20drivers.png "Install additional drivers"
+[Additional Drivers]: https://loneshark99.github.io/images/Additional%20Drivers.png "Install additional drivers"
 
 You can use the list hardware (lshw) command with Class as Network to view the Networking devices and the drivers used by them.
 
@@ -25,7 +25,7 @@ You can use the list hardware (lshw) command with Class as Network to view the N
 
 ![alt text][lshw]
 
-[lshw]: https://loneshark99.github.io/lshw%20network.png "Get info about network hardware"
+[lshw]: https://loneshark99.github.io/images/lshw%20network.png "Get info about network hardware"
 
 
 !Happy Learning and improving one day at a time!
