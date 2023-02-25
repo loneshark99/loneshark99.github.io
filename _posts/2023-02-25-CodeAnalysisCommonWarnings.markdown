@@ -18,3 +18,5 @@ Recently I had to fix a bunch of Code Analysis warning in the code base. I start
 
 
 I would be updating this list as I go through more warnings. But please TreatWarningsAsErrors in your codebase as this will help the code quality and hence helps in maintaining the code.
+
+!Happy Learning and improving one day at a time!
