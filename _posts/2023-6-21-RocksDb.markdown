@@ -5,7 +5,7 @@ date:   2023-06-21 3:27:00 AM
 categories: .Net Core, RocksDb
 ---
 
-[Cluster]: https://loneshark99.github.io/images/ClusterLatest.svg
+[Cluster]: https://loneshark99.github.io/images/ClusterLatest.png
 [RocksDb]: https://loneshark99.github.io/images/RocksDb.jpeg
 
 Recently I have been learning more about embedded database for my work on near real time system. We have an application where telemetry messages are sent from the client browser to a Kafka topic at near real time lag. We have to run collaborative filter models on these click events.
@@ -31,6 +31,6 @@ Write Amplification is a ratio : To write X amount of data to the database, you 
 RocksDb : Very low Write latency and Higher read latency but that is reduced by using Bloom filters and other optimizations. Since the data in the files are sorted, Binary search is used heavily to get to the right data using read queries. 
 
 
-![alt text][Cluster]
+![alt text][RocksDb]
 
 In the next post, I will go through the API's provided by the RocksDb and give more details on the Write/Read logic used by the RocksDb.
