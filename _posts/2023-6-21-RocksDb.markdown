@@ -1,0 +1,36 @@
+---
+layout: post
+title:  "RocksDb"
+date:   2023-06-21 3:27:00 AM
+categories: .Net Core, RocksDb
+---
+
+[Cluster]: https://loneshark99.github.io/images/ClusterLatest.svg
+[RocksDb]: https://loneshark99.github.io/images/RocksDb.jpeg
+
+Recently I have been learning more about embedded database for my work on near real time system. We have an application where telemetry messages are sent from the client browser to a Kafka topic at near real time lag. We have to run collaborative filter models on these click events.
+
+For this we have a streaming framework that basically reads these messages from the kafka topic and runs some application code. While looking into this code, I saw that RocksDb is used for keeping the state on each task partition.
+
+![alt text][Cluster]
+
+As the above diagram shows, we have a cluster where few machines are added into a single group. In a group one of the machine is a leader and others are followers. The leader gets the message from the Kafka topic, does the processing and saves the state in the RocksDb. The state is replicated to the followers. If the leader goes down, one of the follower who is in sync, will take over and become the leader.
+
+RocksDb is an embedded database and is used here to keep the app processing logic state. Since there are B number of Parallels/Thread on each machine, where each thread is reading messages from some of the assigned kafka topic partitions and each thread keeps its own instance of RocksDb, which is replicated on to the other machines.
+
+RocksDb is based on the LevelDb and adds lot of new features and improves performance of the database. RocksDb is a Log Structured Merge (LSM) Tree based database. Due to this it is very fast for writing and little slower for reads.
+
+ LSM Tree based databases have
+
+ - Low Write Amplification
+ - Higher Read Amplification
+
+Write Amplification is a ratio : To write X amount of data to the database, you need to write X+Overhead data to the system. For LSM based database, it doesn't need to know where to write the data, the data is written and later merged and stored in the SST (Sorted String Tables) files during compaction. 
+
+
+RocksDb : Very low Write latency and Higher read latency but that is reduced by using Bloom filters and other optimizations. Since the data in the files are sorted, Binary search is used heavily to get to the right data using read queries. 
+
+
+![alt text][Cluster]
+
+In the next post, I will go through the API's provided by the RocksDb and give more details on the Write/Read logic used by the RocksDb.
