@@ -20,7 +20,7 @@ C# and DotNet provides many ways to do code generation. I am listing some but th
 
   Here is a sample example of code generation through MSBuild Task.
 
-  ![alt text][MsBuildTaskGeneration]
+  [MsBuild Task Generation Example](https://learn.microsoft.com/en-us/visualstudio/msbuild/tutorial-custom-task-code-generation?view=vs-2022)
 
 - **T4 Templates**
 
@@ -39,7 +39,7 @@ C# and DotNet provides many ways to do code generation. I am listing some but th
 
        PredicateBuild by Linqpad Author is a very good example of this. 
 
-       ![alt text][PredicateBuilder]
+       [PredicateBuilder Example](https://www.albahari.com/nutshell/predicatebuilder.aspx)
 
 - **CodeDom**
   
