@@ -4,6 +4,8 @@ title:  "MetaProgramming (aka) CodeGeneration"
 date:   2023-07-14 10:30:00 PM
 categories: MetaProgramming, CodeGeneration
 ---
+[MsBuild Task Generation]: https://learn.microsoft.com/en-us/visualstudio/msbuild/tutorial-custom-task-code-generation?view=vs-2022
+[Predicate Builder]: https://www.albahari.com/nutshell/predicatebuilder.aspx
 
 Overtime I have come to realize that creating framework is where the real fun in programming is for me. It gives me immense satisfaction and sense of focus that is very important for me as a developer.
 
@@ -17,7 +19,7 @@ C# and DotNet provides many ways to do code generation. I am listing some but th
 
   Here is a sample example of code generation through MSBuild Task.
 
-  https://learn.microsoft.com/en-us/visualstudio/msbuild/tutorial-custom-task-code-generation?view=vs-2022
+  ![alt text][MsBuild Task Generation]
 
 - **T4 Templates**
 
@@ -31,17 +33,16 @@ C# and DotNet provides many ways to do code generation. I am listing some but th
 
    With System.Linq.ExpressionTree work generally falls into 2 categories.
 
-    a) Analysis of the ExpressionTree, i.e figuring out the intent and then taking some actions on it. Moq framework is a very good example of this.
-    b) Creating Expression tree or do code generation based on some dynamic parameters. This is a common use case when you want to do filtering but you dont know the parameters beforehand. i.e use selects the filtering columns etc.
+    - a) Analysis of the ExpressionTree, i.e figuring out the intent and then taking some actions on it. Moq framework is a very good example of this.
+    - b) Creating Expression tree or do code generation based on some dynamic parameters. This is a common use case when you want to do filtering but you dont know the parameters beforehand. i.e use selects the filtering columns etc.
 
        PredicateBuild by Linqpad Author is a very good example of this. 
 
-       https://www.albahari.com/nutshell/predicatebuilder.aspx
+       ![alt text][Predicate Builder]
 
 - **CodeDom**
   
    Write cs file using Codedom is a very common technique for code generation. CodeDOM stands for Code Document Object Model. You can write code which generates code and then compile it into an assembly and run it in your project.
-
 
 I will be writing about each of these techniques in detail and will also be recording some videos. 
 
