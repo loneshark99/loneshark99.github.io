@@ -4,6 +4,7 @@ title:  "MetaProgramming (aka) CodeGeneration"
 date:   2023-07-14 10:30:00 PM
 categories: MetaProgramming, CodeGeneration
 ---
+
 [MsBuildTaskGeneration]: https://learn.microsoft.com/en-us/visualstudio/msbuild/tutorial-custom-task-code-generation?view=vs-2022
 [PredicateBuilder]: https://www.albahari.com/nutshell/predicatebuilder.aspx
 
