@@ -21,3 +21,6 @@ Blog Ideas  (Use ASCII Art)
 7) ZooKeeper -- How to do the leader assignment. 
 
 8) T4 Templates
+
+9) dependency injection with constructor parameters 
+
