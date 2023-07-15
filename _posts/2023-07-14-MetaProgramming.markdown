@@ -47,7 +47,5 @@ I will be writing about each of these techniques in detail and will also be reco
 
 **Happy Learning and improving one day at a time**
 
-**Happy Learning and improving one day at a time**
-
 
 
