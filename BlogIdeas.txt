@@ -19,3 +19,5 @@ Blog Ideas  (Use ASCII Art)
 6) Kafka Assign API and how to keep track of the offsets of different partitions.
 
 7) ZooKeeper -- How to do the leader assignment. 
+
+8) T4 Templates
