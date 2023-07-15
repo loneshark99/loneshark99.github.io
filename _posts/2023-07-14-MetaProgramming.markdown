@@ -4,8 +4,9 @@ title:  "MetaProgramming (aka) CodeGeneration"
 date:   2023-07-14 10:30:00 PM
 categories: MetaProgramming, CodeGeneration
 ---
-[MsBuild Task Generation]: https://learn.microsoft.com/en-us/visualstudio/msbuild/tutorial-custom-task-code-generation?view=vs-2022
-[Predicate Builder]: https://www.albahari.com/nutshell/predicatebuilder.aspx
+
+[MsBuildTaskGeneration]: https://learn.microsoft.com/en-us/visualstudio/msbuild/tutorial-custom-task-code-generation?view=vs-2022
+[PredicateBuilder]: https://www.albahari.com/nutshell/predicatebuilder.aspx
 
 Overtime I have come to realize that creating framework is where the real fun in programming is for me. It gives me immense satisfaction and sense of focus that is very important for me as a developer.
 
@@ -19,7 +20,7 @@ C# and DotNet provides many ways to do code generation. I am listing some but th
 
   Here is a sample example of code generation through MSBuild Task.
 
-  ![alt text][MsBuild Task Generation]
+  ![alt text][MsBuildTaskGeneration]
 
 - **T4 Templates**
 
@@ -38,7 +39,7 @@ C# and DotNet provides many ways to do code generation. I am listing some but th
 
        PredicateBuild by Linqpad Author is a very good example of this. 
 
-       ![alt text][Predicate Builder]
+       ![alt text][PredicateBuilder]
 
 - **CodeDom**
   
