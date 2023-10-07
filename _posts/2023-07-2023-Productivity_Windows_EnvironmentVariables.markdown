@@ -2,7 +2,7 @@
 layout: post
 title:  "Environment Variables"
 date:   2023-10-07 11:14:00 AM
-categories: Productivity, Environment Variables
+categories: Productivity
 ---
 
 Today going to list some simple commands which should be in every developers toolkit. These are things that you will need to do quite often in your daily job and its best to incorporate these in your muscle memory.
