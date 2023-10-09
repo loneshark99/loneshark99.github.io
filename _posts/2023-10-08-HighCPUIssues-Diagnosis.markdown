@@ -12,6 +12,9 @@ categories: Debugging
 [FlameGraph]:https://loneshark99.github.io/images/Flame_Graph.png
 [Process1_FlameGraph]: https://loneshark99.github.io/images/Process_1_FlameGraph.png
 [Process1_AfterFix]: https://loneshark99.github.io/images/Process1_AfterFix.png
+[Process2_FlameGraph]: https://loneshark99.github.io/images/Process_2_FlameGraph.png
+[Process2_AfterFix]: https://loneshark99.github.io/images/Process2_AfterFix.png
+
 
 Recently I was tasked with identifying the high CPU issues in our production environment. We were seeing issues where the CPU increase was not really following the traffic patterns. This is a shared environment where lot of different processes are running on a single machine. CPU was consistently reaching 100 percent and was affecting the throughput and latency of other processes in this environment.
 The first step is identifying which processes are consuming high CPU during the peak load and trying to profile those process to see if we can find some bottle neck which are causing this issue. Lot of times, it might be that the CPU is spending lot of time in GC. It maybe due to allocation of Large Object Heap [LOH] or the process is allocating lot of object and keeping reference to them or there may be thread starvation issues etc.
@@ -56,5 +59,18 @@ For the process 1 I saw that the stack points to json serialization/deserializat
  ![alt text][Process1_AfterFix]
 
  Process 2 Issue and Fix.
+
+ For Process 1 I saw that the code was pointing to a dictionary update and looking deeper into the code, I found that the dictionary was cached and for some reason the code was updating the cache dictionary by adding new entry in the loop. This looked like a bug. Fix was to clone the dictionary before any updates. That fixed the issues for this process.
+
+ This is an important article and I have seen similar cases in production scenarios.
+
+ https://www.tessferrandez.com/blog/2009/12/21/high-cpu-in-net-app-using-a-static-generic-dictionary.html  
+
+
+ ![alt text][Process2_FlameGraph]
+
+ CPU after fix 
+ ![alt text][Process2_AfterFix]
+
 
  Process 3 Issue and Fix.
