@@ -21,11 +21,10 @@ Protocol Buffer (protobuf) is created by google and it is used extensively with 
     "ShipOwner" : "White Star Line",
     "ShipId"   : "1"
 }
+```
 
 Serialized String = {"ShipName":"Olympic","ShipOwner":"White Star Line","ShipId":"1"}
-
 Both the properties and the data is serialized together and sent over the wire, which makes it bulky.
-```
 
 ```protobuf
 
@@ -44,9 +43,13 @@ SeriAlized String=126Olympic2215White Star Line3211
 ```
 
 > Data is serialized in 3 part      {FieldId} {FieldType} {FieldData}
+
 > Data is written in this format    {Field Rule}{Field Type} {Field Name} {Field Tag}
+
 > Field Rule : required, repeated...
-> Field Type : string, int32, float, double ....
+
+> Field Type : string, int32, float, double
+
 > Field Tag : int32 
 
 
