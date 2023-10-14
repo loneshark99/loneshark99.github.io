@@ -1,0 +1,32 @@
+---
+layout: post
+title: "SSH"
+date: 2023-10-14 1:53:00 PM
+categories: Development
+---
+
+Key Less SSH logins , use the following commands to create a Public/Private Key and copy the public key to the SSH server.
+
+```bash
+sudo ssh-keygen -t rsa
+ssh-copy-id yash@xx.xx.xx.xx
+ssh yash@xx.xx.xx.xx
+```
+
+On a windows machine you wont have access to the script ssh-copy-id. In that case run the following commands.
+
+```bash
+sudo ssh-keygen -t rsa
+cat ~/.ssh/id_rsa.pub | ssh yash@192.168.0.14 "cat >> ~/.ssh/authorized_keys"
+ssh yash@xx.xx.xx.xx
+```
+
+One thing to note here in the below command is why are we using double quotes infront of the cat command.
+
+cat ~/.ssh/id_rsa.pub | ssh yash@192.168.0.14 "cat >> ~/.ssh/authorized_keys"
+
+As we know, that double quotes only allows below expansion/substitution and does not allow tilde expansion. So the command will be run as is on the remote server.
+
+- parameter expansion
+- arithmetic expansion
+- command substitution
