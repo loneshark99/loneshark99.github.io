@@ -5,7 +5,7 @@ date: 2023-10-14 11:45:00 AM
 categories: Development
 ---
 
-I am listing of thr visual studio useful shortcuts that I use frequently.
+I am listing of the visual studio useful shortcuts that I use frequently.
 
 - My personal favorite is getting quickly to the solution explorer.
   > CTRL + ALT + L
