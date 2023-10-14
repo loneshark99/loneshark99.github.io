@@ -13,6 +13,9 @@ I am listing of the visual studio useful shortcuts that I use frequently.
 - Fine next feature is very useful for me. I generally highlight a particular variable and then keep pressing F3 with CTRL pressed to find the other occurrences of the variable.
   > CTRL + F3
 
+- To delete a line and also copy at the same time
+  > CTRL + X
+
 - Attach to a process is also one of my fvt command line shortcut
   > CTRL + ALT + P
 
