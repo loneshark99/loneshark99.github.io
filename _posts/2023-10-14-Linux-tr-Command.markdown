@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Tr -- Linux Command"
+title: "tr and tar Linux Command"
 date: 2023-10-14 5:26:00 PM
 categories: Development
 ---
@@ -53,5 +53,30 @@ yash@yash-ThinkPad-T430:~$ printenv PATH | tr : \n | tr -d yash
 /np/bin
 /ome//.dotnet/tool
 ```
+
+**tar -- TAPE ARCHIVE**
+
+Create a Tar ball from a list of files
+
+Tar has some options which are commonly used.
+
+- c -- Create File
+- x -- Extract File
+- f -- File Name
+- v -- Verbose
+- r -- Append
+- t -- List Contents
+- z -- Zip Content
+
+
+To Create a Tar Ball 
+    ```bash
+    tar cvf AllHtmls.tar *.html
+    ```
+
+To Extract a Tar Balll 
+    ```bash
+    tar xvf AllHtmls.tar OR tar -C ~/test -xvf AllHtmls.tar
+    ```
 
 **Happy learning and improving one day at a time**

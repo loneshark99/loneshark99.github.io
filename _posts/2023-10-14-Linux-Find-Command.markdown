@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Find -- Linux Command"
+title: "find Linux Command"
 date: 2023-10-14 5:29:00 PM
 categories: Development
 ---
@@ -22,7 +22,8 @@ Some of the common patterns with the find command
 
 - print adds a trailing new line to each results and print0 adds a trailing null at the end of the each results. It is useful when a file has spaces.
     ```bash
-    find . -iname *.txt print or find -iname *.txt print0
+    find . -iname *.txt print 
+    find -iname *.txt print0
     ```
 
 - This command can be used to find all the file greater than 1GB file size.
