@@ -4,5 +4,23 @@ How to run a Flink Application in Kubernetes.
 2) Install Flink-Kubernetes Operator as a Custom Resource Definition.
 3) Install lens Kubernetes explorer to view the different deployment and interact with the Kubernetes cluster.
 4) Start the Kubernetes cluster.
+5) Run the following command. This is a useful step. 
 
+   When you run this command, it outputs environment variables that, when applied to your shell session, redirect Docker commands to use Minikube's internal Docker environment. This enables you to:
 
+    a) Build Docker images directly inside the Minikube VM
+    b) Use those images in your Kubernetes pods without pushing to an external registry
+    c) Access the same Docker daemon that Kubernetes uses to run containers
+
+  After running this command, any Docker commands you issue (like docker build or docker images) will interact with Minikube's Docker daemon instead of your local one.
+
+    ```bash
+      eval $(minikube docker-env)
+    ```
+6) Build the application using Maven.
+
+  ```bash
+    yash@YashDevBox ~/I/flink-app> mvn clean install
+  ```
+  
+7) Build your docker image.
