@@ -136,6 +136,27 @@ When running locally, be mindful of resource constraints. Remove unused applicat
 kubectl delete flinkdeployment yash-example-9
 ```
 
+### 8. Install Prometheus (push based) metrics collector and grafana dashboard.
+
+```bash
+# Add the Prometheus community Helm repository
+helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
+helm repo update
+
+# Create a namespace for monitoring
+kubectl create namespace monitoring
+
+# Install Prometheus using Helm
+helm install prometheus prometheus-community/kube-prometheus-stack --namespace monitoring
+
+# Get the Grafana dashboard http://127.0.0.1:3000 UserName : admin and Password.
+kubectl --namespace default get secrets prometheus-grafana -o jsonpath="{.data.admin-password}" | base64 -d ; echo
+export POD_NAME=$(kubectl --namespace default get pod -l "app.kubernetes.io/name=grafana,app.kubernetes.io/instance=prometheus" -oname)
+# Do port forwarding.
+kubectl --namespace default port-forward $POD_NAME 3000
+```
+![Grafana Dashboard](https://loneshark99.github.io/images/GrafanaDashboard.png "Grafana Dashboard")
+
 ## Conclusion
 
 You've successfully deployed an Apache Flink application in a Kubernetes environment. This setup enables scalable, container-orchestrated stream processing workflows suitable for both development and production environments.
