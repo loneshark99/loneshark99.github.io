@@ -1,0 +1,8 @@
+How to run a Flink Application in Kubernetes.
+
+1) Install Minikube on your maachine.
+2) Install Flink-Kubernetes Operator as a Custom Resource Definition.
+3) Install lens Kubernetes explorer to view the different deployment and interact with the Kubernetes cluster.
+4) Start the Kubernetes cluster.
+
+
