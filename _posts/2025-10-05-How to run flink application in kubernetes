@@ -76,5 +76,13 @@ How to run a Flink Application in Kubernetes.
       kubectl port-forward yash-example-9 8081
    ```
 
-9) 
+9) Check your flink deployment is created and you can view the logs as needed using the UI or from the kubectl logs command.
+
+   ```bash
+      kubectl logs -f deploy/basic-example
+   ```
+10) Delete the application from the Custom Resources Definition as sometimes running locally you cant get enough resources if you have too many applications running.
+
+
+   
 
