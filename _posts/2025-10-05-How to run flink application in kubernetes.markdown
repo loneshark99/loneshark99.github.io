@@ -2,8 +2,8 @@
 layout: post
 title: "Deploying Apache Flink Applications in Kubernetes"
 date: 2025-10-05 13:33:00
-categories: [Apache Flink, Kubernetes, Container Orchestration]
-tags: [flink, kubernetes, docker, minikube, deployment, data processing]
+categories: Apache Flink,Kubernetes,ContainerOrchestration
+tags: flink,kubernetes,docker,minikube,deployment,data processing
 ---
 
 # Deploying Apache Flink Applications in Kubernetes
