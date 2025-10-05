@@ -3,6 +3,10 @@ How to run a Flink Application in Kubernetes.
 1) Install Minikube on your maachine.
 2) Install Flink-Kubernetes Operator as a Custom Resource Definition.
 3) Install lens Kubernetes explorer to view the different deployment and interact with the Kubernetes cluster.
+
+   ```bash
+      lens-desktop &
+   ```
 4) Start the Kubernetes cluster.
 5) Run the following command. This is a useful step. 
 
@@ -23,4 +27,54 @@ How to run a Flink Application in Kubernetes.
     yash@YashDevBox ~/I/flink-app> mvn clean install
   ```
   
-7) Build your docker image.
+7) Build and Load your docker image.
+
+   Create a Dockerfile and copy the application jar you build in the previous step into the streaming folder in flink.
+
+   ```docker
+   FROM flink:1.20
+   COPY flink-app-0.1.jar /opt/flink/examples/streaming/flink-app-0.1.jar
+   ```
+
+   ```bash
+      docker build -t yashflink8:latest .
+      minikube image load yashflink8:latest
+   ```
+8) Create a Kubernetes deployment for your application.
+
+   Create a deployment.yaml file and make sure you use the same jarURI path as the docker image.
+
+   ```yaml
+   apiVersion: flink.apache.org/v1beta1
+   kind: FlinkDeployment
+   metadata:
+     name: yash-example-9
+   spec:
+     image: yashflink8:latest
+     flinkVersion: v1_20
+     flinkConfiguration:
+       taskmanager.numberOfTaskSlots: 2
+     serviceAccount: flink
+     jobManager:
+       resource:
+         memory: "2048m"
+         cpu: 1
+     taskManager:
+       resource:
+         memory: "2048m"
+         cpu: 1
+     job:
+       jarURI: file:///opt/flink/examples/streaming/flink-app-0.1.jar
+       entryClass: org.example.DataStreamJob
+       parallelism: 2
+       upgradeMode: stateless
+   ```
+
+   Run the following command to create the deployment and use port forwarding to see the Flink Dashboard.
+   ```bash
+      kubectl create -f /home/yash/IdeaProjects/flink-app/src/main/resources/deployment.yaml
+      kubectl port-forward yash-example-9 8081
+   ```
+
+9) 
+
