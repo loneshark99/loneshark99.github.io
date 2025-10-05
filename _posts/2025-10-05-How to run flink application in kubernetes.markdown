@@ -9,8 +9,7 @@ How to run a Flink Application in Kubernetes.
 
 1) Install Minikube on your maachine.
 
-   ![alt text][Minikube]
-   [Minikube]: https://loneshark99.github.io/images/StartKubernetesCluster.png "Minikube"
+![Minikube](https://loneshark99.github.io/images/StartKubernetesCluster.png "Minikube")
 
 2) Install Flink-Kubernetes Operator as a Custom Resource Definition.
 3) Install lens Kubernetes explorer to view the different deployment and interact with the Kubernetes cluster.
@@ -52,10 +51,9 @@ How to run a Flink Application in Kubernetes.
       minikube image load yashflink8:latest
    ```
 
-   ![alt text][Build Docker Image]
-   [Build Docker Image]: https://loneshark99.github.io/images/BuildAndLoadDockerImage.png "Build Docker Image"
+   ![Build Docker Image](https://loneshark99.github.io/images/BuildAndLoadDockerImage.png "Build Docker Image")
 
-8) Create a Kubernetes deployment for your application.
+9) Create a Kubernetes deployment for your application.
 
    Create a deployment.yaml file and make sure you use the same jarURI path as the docker image.
 
@@ -91,14 +89,12 @@ How to run a Flink Application in Kubernetes.
       kubectl port-forward yash-example-9 8081
    ```
 
-9) Check your flink deployment is created and you can view the logs as needed using the UI or from the kubectl logs command.
+10) Check your flink deployment is created and you can view the logs as needed using the UI or from the kubectl logs command.
 
    ```bash
       kubectl logs -f deploy/basic-example
    ```
-
-![alt text][Kubernetes Deployment]
-[Kubernetes Deployment]: https://loneshark99.github.io/images/KubernetesDeployment.png "Kubernetes Deployment"
+![Kubernetes Deployment](https://loneshark99.github.io/images/KubernetesDeployment.png "Kubernetes Deployment")
 
 10) Delete the application from the Custom Resources Definition as sometimes running locally you cant get enough resources if you have too many applications running.
 
