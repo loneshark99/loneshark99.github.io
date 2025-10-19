@@ -8,6 +8,5 @@ categories: Java
 
 1) When adding a new package to a application, you can use the Maven to sync your new changes and download the packages.
 
-    **IntelliJ ShortCut :: Ctrl + Shift + O**
-
+**IntelliJ ShortCut :: Ctrl + Shift + O**
 ![alt text][MavenSync]
