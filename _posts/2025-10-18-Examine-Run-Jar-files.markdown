@@ -4,6 +4,7 @@ title: "Jar files in Java"
 date: 2025-10-18 14:06:00
 categories: Java
 ---
+[JavaDecompiler]: https://github.com/loneshark99/loneshark99.github.io/blob/master/images/Java-Decompiler.png?raw=true
 
 # Jar files in Java
 
@@ -23,7 +24,7 @@ Execute  a Jar file.
 Java decompiler is a very useful tool. It will show the classes by packages.
 
 
-![Java Decompiler View](https://loneshark99.github.io/images/KJava-Decompiler.png "Java Decompiler View")
+![alt text][JavaDecompiler]
 
 
 Jar files are essentially a zip file, you can use the jar command to extract it to a different folder.
