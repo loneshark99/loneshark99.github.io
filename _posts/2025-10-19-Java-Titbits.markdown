@@ -10,4 +10,4 @@ categories: Java
 
     **IntelliJ ShortCut :: Ctrl + Shift + O**
 
-![Maven Sync][MavenSync]
+![alt text][MavenSync]
