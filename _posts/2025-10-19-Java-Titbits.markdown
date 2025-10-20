@@ -19,4 +19,6 @@ categories: Java
 ![alt text][JavaInheritance]
 
 - When you need to know what are the different overloads of a method, or just want to see the method parameters, the below IntelliJ shortcut is very useful and I find it using it a lot.
+
+**IntelliJ ShortCut :: Ctrl + P**
 ![alt text][MethodParameters]
