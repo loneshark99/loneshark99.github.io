@@ -6,6 +6,7 @@ categories: Java
 ---
 [MavenSync]: https://github.com/loneshark99/loneshark99.github.io/blob/master/images/Maven%20Sync%20Packages.png?raw=true
 [JavaInheritance]: https://github.com/loneshark99/loneshark99.github.io/blob/master/images/Inheritance.png?raw=true
+[MethodParameters]: https://github.com/loneshark99/loneshark99.github.io/blob/master/images/Method-Parameters.png?raw=true
 
 - When adding a new package to a application, you can use the Maven to sync your new changes and download the packages.
 
@@ -16,3 +17,6 @@ categories: Java
 
 **IntelliJ ShortCut :: Ctrl + O**
 ![alt text][JavaInheritance]
+
+- When you need to know what are the different overloads of a method, or just want to see the method parameters, the below IntelliJ shortcut is very useful and I find it using it a lot.
+![alt text][MethodParameters]
