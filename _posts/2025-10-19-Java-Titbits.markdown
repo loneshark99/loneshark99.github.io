@@ -5,8 +5,14 @@ date: 2025-10-19 15:30:00
 categories: Java
 ---
 [MavenSync]: https://github.com/loneshark99/loneshark99.github.io/blob/master/images/Maven%20Sync%20Packages.png?raw=true
+[JavaInheritance]: https://github.com/loneshark99/loneshark99.github.io/blob/master/images/Inheritance.png?raw=true
 
-1) When adding a new package to a application, you can use the Maven to sync your new changes and download the packages.
+- When adding a new package to a application, you can use the Maven to sync your new changes and download the packages.
 
 **IntelliJ ShortCut :: Ctrl + Shift + O**
 ![alt text][MavenSync]
+
+- When you want to override a function, IntelliJ provides a nice shortcut to view all the methods of all parent classes. I find this very useful especially with flink application development.
+
+**IntelliJ ShortCut :: Ctrl + O**
+![alt text][JavaInheritance]
