@@ -39,4 +39,11 @@ categories: Java
 **IntelliJ ShortCut :: CTRL + TAB**
 
 - **Search Everywhere**  is a very useful to find the files you need to work or any keyword you are searching for. <br>
-**IntelliJ ShortCut :: SHIFT + SHIFT** 
+**IntelliJ ShortCut :: SHIFT + SHIFT**
+
+- To progressively expands your text selection in intelligent, syntax-aware increments. Each time you press Ctrl+W, it selects the next logical block of code.
+**IntelliJ ShortCut :: CTRL + W**
+
+- To add boiler plate code generate constructor or override methods.
+**IntelliJ ShortCut :: ALT + INSERT**
+
