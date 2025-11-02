@@ -23,14 +23,14 @@ categories: Java
 **IntelliJ ShortCut :: Ctrl + P**
 ![alt text][MethodParameters]
 
-- Tools window is very useful in Java to view the project files
+- Tools window is very useful in Java to view the project files <br>
 **IntelliJ ShortCut :: ALT + 1**
   
-- Tools window is very useful in Java to view Run window
+- Tools window is very useful in Java to view Run window <br>
 **IntelliJ ShortCut :: ALT + 4**
   
-- Tools windows to view the GIT
+- Tools windows to view the GIT <br>
 **IntelliJ ShortCut :: ALT + 9**
 
-- To view the terminal window
+- To view the terminal window <br>
 **IntelliJ ShortCut :: ALT + F12**
