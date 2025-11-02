@@ -34,3 +34,9 @@ categories: Java
 
 - To view the terminal window <br>
 **IntelliJ ShortCut :: ALT + F12**
+
+- **Switcher window** is very useful to cycle through the files and the tools window.
+**IntelliJ ShortCut :: CTRL + TAB**
+
+- **Search Everywhere**  is a very useful to find the files you need to work or any keyword you are searching for.
+**IntelliJ ShortCut :: SHIFT + SHIFT** 
