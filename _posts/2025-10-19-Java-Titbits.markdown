@@ -44,6 +44,9 @@ categories: Java
 - To progressively expands your text selection in intelligent, syntax-aware increments. Each time you press Ctrl+W, it selects the next logical block of code. <br>
 **IntelliJ ShortCut :: CTRL + W**
 
-- To add boiler plate code generate constructor or override methods. <br>
+- **Add boiler plate code** generate constructor or override methods. <br>
 **IntelliJ ShortCut :: ALT + INSERT**
+
+- To format code run the following command. <br>
+**Format code ShortCut :: CTRL + ALT + L** 
 
