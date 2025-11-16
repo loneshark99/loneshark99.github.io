@@ -50,3 +50,5 @@ categories: Java
 - To format code run the following command. <br>
 **Format code ShortCut :: CTRL + ALT + L** 
 
+- To remove not used import and others improvement use the follwoing command. <br>
+**Remove Imports Shortcut :: CLTR + ALT + O**
