@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Java Garbage Collection"
+title: "Apache Flink Custom Data Types for Performance."
 date: 2025-12-29 14:03:00
 categories: Java
 ---
