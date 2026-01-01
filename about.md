@@ -1,7 +1,7 @@
 ---
-layout: page
+layout: default
 title: About
-permalink: /about/
+nav_order: 2
 ---
 
 This is the my personal blog. All thoughts mentioned in here are my own and depends on my mood at the time of writing. Thanks for visiting this page.
