@@ -9,6 +9,7 @@ tags:  [kubernetes]
 [Kubernetes_process]:/images/Kubernetes_Processes.png
 [Kubernetes_controller]:/images/Kube-controller-manifest.png
 [Control_Plane]:/images/ControlPlane.png
+[etcd]:/images/etcd.png
 
 To understand the different components of the Kubernetes cluster we need to see what components are current running on the system. I have a minikube instance running and I can ssh into the instance to see all the processes that are running. For this I can run the following command.
 
@@ -55,6 +56,23 @@ yash@YashDevBox:~$ curl -N -s -K -H "Authorization: Bearer $TOKEN" "$APISERVER/a
 # etcd (Distributed Database of the Cluster)
 Along with this another component thats very critical is the **etcd** which is the Key-Value Pair database of the Cluster. This contains all the resource informations like the **pods, nodes, configMaps, Secrets, services, CRD Custom Resource Definition**.
 
+```bash
+    yash@YashDevBox ~> kubectl get pods -n kube-system
+
+    yash@YashDevBox ~> kubectl describe pod etcd-minikube -n kube-system
+
+    yash@YashDevBox ~> kubectl exec -it etcd-minikube -n kube-system -- \
+                       etcdctl --endpoints=https://127.0.0.1:2379 \
+                       --cacert=/var/lib/minikube/certs/etcd/ca.crt \
+                       --cert=/var/lib/minikube/certs/etcd/server.crt \
+                       --key=/var/lib/minikube/certs/etcd/server.key \
+                       get / --prefix --keys-only
+```
+
+You can view all the database keys/resources with the above commands.
+
+![etcd][etcd]
+
 # kubectl (Systemd service)
 
 **kubectl** is the systemd service and this is the first components that starts when the cluster is started. It looks at 
@@ -72,4 +90,4 @@ We can see the kube-controller yaml file and see that is part of the control-pla
 
 To recap, the below image makes all the concepts clear.
 
-![Control_Plane]:[Control_Plane]
+![Control_Plane][Control_Plane]
