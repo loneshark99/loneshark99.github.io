@@ -11,9 +11,9 @@ tags:  [kubernetes]
 To understand the different components of the Kubernetes cluster we need to see what components are current running on the system. I have a minikube instance running and I can ssh into the instance to see all the processes that are running. For this I can run the following command.
 
 ```bash
-    minikube ssh
-    pgrep -l kube
-    pgrep -l etcd
+    docker@minikube:~$ minikube ssh
+    docker@minikube:~$ pgrep -l kube
+    docker@minikube:~$ pgrep -l etcd
 ```
 
 ![components][Kubernetes_process]
