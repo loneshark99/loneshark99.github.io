@@ -8,6 +8,7 @@ tags:  [kubernetes]
 
 [Kubernetes_process]:/images/Kubernetes_Processes.png
 [Kubernetes_controller]:/images/Kube-controller-manifest.png
+[Control_Plane]:/images/ControlPlane.png
 
 To understand the different components of the Kubernetes cluster we need to see what components are current running on the system. I have a minikube instance running and I can ssh into the instance to see all the processes that are running. For this I can run the following command.
 
@@ -68,3 +69,7 @@ We can see the kube-controller yaml file and see that is part of the control-pla
 
 ![Kubernetes_controller][Kubernetes_controller]
 
+
+To recap, the below image makes all the concepts clear.
+
+![Control_Plane]:[Control_Plane]
