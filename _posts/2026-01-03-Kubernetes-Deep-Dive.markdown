@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Kubernetes Deep Dive and understanding different componets of Kubenetes using Minikube"
+title: "Kubernetes Deep Dive and understanding different components of Kubenetes using Minikube"
 date: 2026-01-03 11:04:00
 categories: [kubernetes]
 tags:  [kubernetes]
 ---
 
-[Kubernetes_process]:/assets/Kubernetes_Processes.png
+[Kubernetes_process]:/images/Kubernetes_Processes.png
 
 To understand the different components of the Kubernetes cluster we need to see what components are current running on the system. I have a minikube instance running and I can ssh into the instance to see all the processes that are running. For this I can run the following command.
 
