@@ -30,7 +30,7 @@ Kube-Controller maintains the **desired state** of your cluster. It runs in a lo
 
 - Observe  
     Checks the current state by calling the api server.
-- Compares 
+- Compares
     Compares it wil the desired state
 - Acts on the difference  
     It makes the current state back inline with the desired state. 
