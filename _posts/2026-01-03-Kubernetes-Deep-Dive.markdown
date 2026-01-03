@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Kubernetes Deep Dive and understanding different components of Kubenetes using Minikube"
+title: "Kubernetes Deep Dive into its components."
 date: 2026-01-03 11:04:00
 categories: [kubernetes]
 tags:  [kubernetes]
