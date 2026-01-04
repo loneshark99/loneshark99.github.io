@@ -22,6 +22,8 @@ url: "https://loneshark99.github.io" # the base hostname & protocol for your sit
 github_username:  loneshark99
 search_enabled: true
 remote_theme: just-the-docs/just-the-docs
+mermaid:
+  version: "10.9.0"
 
 # Build settings
 markdown: kramdown
