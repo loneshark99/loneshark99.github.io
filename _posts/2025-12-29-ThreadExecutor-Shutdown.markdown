@@ -5,6 +5,8 @@ date: 2025-12-29 15:17:00
 categories: Java
 ---
 
+# Non blocking ThreadExecutor Shutdown  Api and Blocking awaitTermination Api.
+
 I was curious about the Executor.Shutdown method. I thought that this was a blocking method but its not. Its basically flips the switch of the executor to Shutting down.
 Pretty interesting and someone can easily make a mistake. Below it shows how to shutdown a Executor Service correctly. **Follow this!**
 

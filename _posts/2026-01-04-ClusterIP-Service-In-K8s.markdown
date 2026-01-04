@@ -1,10 +1,12 @@
 ---
 layout: post
-title: "Kubernetes ClusterId Service"
+title: "Kubernetes ClusterIP Service"
 date: 2026-01-04 13:19:00
 categories: [kubernetes]
 tags:  [kubernetes]
 ---
+
+# Kubernetes ClusterIP Service
 
 Services in K8s is not pods or containers. They are actually configured in the Linux Kernel network stack using IP Tables and DNS Service.
 

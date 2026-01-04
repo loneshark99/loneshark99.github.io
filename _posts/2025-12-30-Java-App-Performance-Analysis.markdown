@@ -6,7 +6,7 @@ categories: [Java, Performance, Flink]
 tags:  [profiling, debugging, thread-dump, flame-graph, observability]
 ---
 
-## Background
+# Performance Analysis in Java Applications:  A Flink Deep Dive
 
 Recently, I've been working on a Flink Java application experiencing significant performance issues. This led me down a path of discovering the rich set of diagnostic tools available in the Java ecosystem for identifying and resolving backpressure and performance bottlenecks.
 

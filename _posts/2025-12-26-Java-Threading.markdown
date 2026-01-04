@@ -5,6 +5,8 @@ date: 2025-12-26 14:23:00
 categories: Java
 ---
 
+# Java threads
+
 These are some important conversation details from my Gemini chat which are very critical to become a great developer.
 
 Here is the breakdown of the difference between a standard **ThreadPool** (like `FixedThreadPool`) and the **ForkJoinPool**.

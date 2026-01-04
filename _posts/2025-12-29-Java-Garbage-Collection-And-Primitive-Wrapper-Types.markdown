@@ -5,6 +5,8 @@ date: 2025-12-29 13:38:00
 categories: Java
 ---
 
+# Java Garbage Collection
+
 Garbage collection and the wait times are the some of the most important metrics you need to track to see if you application is running with good performance.  
 
 For tuning the application you need to watch of the 

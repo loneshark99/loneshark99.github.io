@@ -5,6 +5,7 @@ date: 2025-12-29 14:03:00
 categories: Java
 ---
 
+# Apache Flink Custom Data Types for Performance.
 
 Flink provides a dedicated set of data types located primarily in the `org.apache.flink.types` package. These are designed to overcome the performance limitations of standard Java types (immutability and heavy serialization).
 
