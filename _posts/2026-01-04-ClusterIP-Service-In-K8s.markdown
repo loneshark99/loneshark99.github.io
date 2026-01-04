@@ -66,7 +66,7 @@ spec:
 
 
 
-
+```mermaid
 graph TD
     %% Define Styles to match the image
     classDef red fill:#e74c3c,stroke:#c0392b,color:white;
@@ -103,3 +103,4 @@ graph TD
 
     %% 3. Response
     Pod1 -->|3. Responds: Hello! I am Pod| Debug
+```
