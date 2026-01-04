@@ -134,7 +134,7 @@ yash@YashDevBox ~> kubectl describe pod nginx-echo-7d68cf9b87-rn8pw
 To view underneath how the traffic is routed, we can ssh into the cluster and  run the following command and examine its output.
 
 ```bash
-yash@YashDevBox ~> sudo iptables -t nat -S | grep echo-service
+docker@minikube:~$ sudo iptables -t nat -S | grep echo-service
 ```
 
 <pre>docker@minikube:~$ sudo iptables -t nat -S | grep echo-service
