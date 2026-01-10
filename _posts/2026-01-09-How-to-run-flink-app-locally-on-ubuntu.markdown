@@ -31,9 +31,9 @@ mvn archetype:generate \
   -DinteractiveMode=false
 ```
 
-![FlinkCluster](FlinkCluster)
+![FlinkCluster][FlinkCluster]
 
-I have attached the sample project, that you can ![download here.](FlinkStarterApp)
+I have attached the sample project, that you can ![download here.][FlinkStarterApp]
 
 Once the project is setup with the correct flink packages, then submit the job to the flink cluster.
 
