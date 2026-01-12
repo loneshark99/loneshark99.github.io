@@ -52,3 +52,8 @@ categories: Java
 
 - To remove not used import and others improvement use the follwoing command. <br>
 **Remove Imports Shortcut :: CLTR + ALT + O**
+
+- To collapse code and Expand code use the following command. <br>
+**Expand Code :: CTRL + ALT + +**
+**Collapse Code :: CTRL + ALT + -**
+
