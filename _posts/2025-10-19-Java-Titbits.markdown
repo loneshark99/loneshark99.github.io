@@ -50,10 +50,13 @@ categories: Java
 - To format code run the following command. <br>
 **Format code ShortCut :: CTRL + ALT + L** 
 
-- To remove not used import and others improvement use the follwoing command. <br>
+- To remove not used import and others improvement use the following command. <br>
 **Remove Imports Shortcut :: CLTR + ALT + O**
 
 - To collapse code and Expand code use the following command. <br>
-**Expand Code :: CTRL + ALT + +**
-**Collapse Code :: CTRL + ALT + -**
+**Expand Code :: CTRL + SHIFT + +**
+**Collapse Code :: CTRL + SHIFT + -**
 
+- To Expand or collase just the function, use the following comamnd. <br>
+**Expand Code :: CTRL + +**
+**Collapse Code :: CTRL + -**
