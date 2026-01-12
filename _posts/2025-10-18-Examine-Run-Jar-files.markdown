@@ -77,3 +77,26 @@ Fat jar is a jar files which includes all the required dependencies. It is gener
 	</executions>
 </plugin>
 ```
+
+
+If you want to see all the methods that are defined in .class file you can use the javap command line cool. This is a really cool tool to see if the methods are available or not.
+
+-cp will copy the jar file into the classpath.
+
+javap  -p -cp target/flink-1.19-app-1.0-SNAPSHOT.jar com.example.TestKeyedProcessFunction
+
+
+```bash
+yash@YashDevBox ~/f/P/flink-1.19-app> javap  -p -cp target/flink-1.19-app-1.0-SNAPSHOT.jar com.example.TestKeyedProcessFunction
+Compiled from "TestKeyedProcessFunction.java"
+public class com.example.TestKeyedProcessFunction extends org.apache.flink.streaming.api.functions.KeyedProcessFunction<java.lang.String, org.apache.flink.api.java.tuple.Tuple2<java.lang.String, java.lang.Integer>, org.apache.flink.api.java.tuple.Tuple2<java.lang.String, java.lang.Integer>> {
+  private org.slf4j.Logger LOG;
+  private org.apache.flink.api.common.state.ValueState<java.lang.Integer> valueState;
+  private org.apache.flink.api.common.state.ValueState<java.lang.Long> timestampState;
+  public com.example.TestKeyedProcessFunction();
+  public void open(org.apache.flink.configuration.Configuration) throws java.lang.Exception;
+  public void processElement(org.apache.flink.api.java.tuple.Tuple2<java.lang.String, java.lang.Integer>, org.apache.flink.streaming.api.functions.KeyedProcessFunction<java.lang.String, org.apache.flink.api.java.tuple.Tuple2<java.lang.String, java.lang.Integer>, org.apache.flink.api.java.tuple.Tuple2<java.lang.String, java.lang.Integer>>.Context, org.apache.flink.util.Collector<org.apache.flink.api.java.tuple.Tuple2<java.lang.String, java.lang.Integer>>) throws java.lang.Exception;
+  public void onTimer(long, org.apache.flink.streaming.api.functions.KeyedProcessFunction<java.lang.String, org.apache.flink.api.java.tuple.Tuple2<java.lang.String, java.lang.Integer>, org.apache.flink.api.java.tuple.Tuple2<java.lang.String, java.lang.Integer>>.OnTimerContext, org.apache.flink.util.Collector<org.apache.flink.api.java.tuple.Tuple2<java.lang.String, java.lang.Integer>>) throws java.lang.Exception;
+  public void processElement(java.lang.Object, org.apache.flink.streaming.api.functions.KeyedProcessFunction$Context, org.apache.flink.util.Collector) throws java.lang.Exception;
+}
+```
